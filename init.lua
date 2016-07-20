@@ -18,7 +18,7 @@ scuba.set = function(defs)
 		})
 		scuba.huds[defs.player][1] = hud_id;
 	--hard override 3d armor not knowing external pieces of armor (causes debug spam)
-	elseif not string.match(armor["textures"][defs.player:get_player_name()].armor, "^scuba_helmet.png") then
+	elseif not string.match(armor["textures"][defs.player:get_player_name()].armor, "scuba_helmet.png") then
 		local player = defs.player
 		local armor_texture = armor["textures"][player:get_player_name()].armor
 		armor_texture = armor_texture.."^scuba_helmet.png"
