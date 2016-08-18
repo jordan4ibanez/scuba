@@ -78,3 +78,14 @@ minetest.register_craftitem("scuba:scuba_helmet", {
 	description = "Scuba Helmet",
 	inventory_image = "scuba_item.png",
 })
+
+
+
+minetest.register_craft({
+	output = "scuba:scuba_helmet",
+	recipe = {
+		{"default:steelblock", "default:steelblock", "default:steelblock"},
+		{"default:steelblock", "default:glass", "default:steelblock"},
+		{"default:steelblock", "default:glass", "default:steelblock"}
+	}
+})
